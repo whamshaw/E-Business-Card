@@ -1,39 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
     <title>Will Hamshaw</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://use.fontawesome.com/1a5bf879ca.js"></script>
     <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="static/css/orbit.css" />
     <link rel="stylesheet" type="text/css" href="static/css/responsiveGrid.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="icon" type="image/png" href="static/img/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="static/img/favicon-16x16.png" sizes="16x16" />
     <link href="https://fonts.googleapis.com/css?family=Overpass" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> 
     <script src="static/js/resizemagic.js"></script>
+    <script src="static/js/click.js"></script>
 </head>
 
 <body>
     <div class="container maincontainer">
         <div class="row">
             <div class="grd_title col-1">
-                <h1> William Hamshaw </h1>
+                <h1> Will Hamshaw </h1>
             </div>
-            <div class="grd_profilepic col-11"><img src="static/img/profilepic.png" class="profilepic"></div>
+            <div class="grd_profilepic col-11"><img src="static/img/profilepic.jpg" class="button profilepic" id="profilepic"></div>
         </div>
         <div class="row">
-            <div class="grd_blurb">
+            <div class="grd_blurb" id="blurb">
                 <p>student & software developer</p>
                 <p>Python | Java | Bash | C | HTML | CSS</p>
             </div>
-        </div>
+        </div> 
+    <audio id="click" name="click">
+        <source src="static/sound/click.wav" type="audio/wav">
+        <source src="static/sound/click.ogg" type="audio/ogg">
+        Get firefox
+    </audio>
         <div class="row">
-            <div class="grd_buttonbox grid_container">
-                <div class="item"><a href="https://github.com/Wild8ill" class="button" name="github"><span><i class="fa fa-github"></i></span></a></div>
-                <div class="item"><a href="https://t.me/willhamshaw" class="button" name="telegram"><span><i class="fa fa-telegram"></i></span></a></div>
-                <div class="item"><a href="https://steamcommunity.com/id/Wild8ill/1" class="button" name="steam"><span><i class="fa fa-steam"></i></span></a></div>
-                <div class="item"><a href="https://www.linkedin.com/in/william-hamshaw-311851179/" class="button" name="linkedin"><span><i class="fa fa-linkedin"></i></span></a></div>
-                <div class="item"><a href="mailto:william@hamshaw.co.uk" class="button" name="email"><span><i class="fa fa-envelope-square"></i></span></a></div>
+            <div class="grd_buttonbox grid_container" id="grid">
+                <div class="item"><a onclick="playClick()" href="https://github.com/Wild8ill" class="button" name="github"><span><i class="fa fa-github"></i></span></a></div>
+                <div class="item"><a onclick="playClick()" href="https://www.linkedin.com/in/william-hamshaw-311851179/" class="button" name="linkedin"><span><i class="fa fa-linkedin"></i></span></a></div>
+                <div class="item"><a onclick="playClick()" href="https://t.me/willhamshaw" class="button" name="telegram"><span><i class="fa fa-telegram"></i></span></a></div>
+                <div class="item"><a onclick="playClick()" href="mailto:william@hamshaw.co.uk" class="button" name="email"><span><i class="fa fa-envelope-square"></i></span></a></div>
+                <div class="item"><a onclick="playClick()" href="https://steamcommunity.com/id/Wild8ill/1" class="button" name="steam"><span><i class="fa fa-steam"></i></span></a></div>
             </div>
         </div>
     </div>

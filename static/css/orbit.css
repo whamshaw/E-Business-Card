@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'EarthOrbiter';
+    src: url('https://willhamshaw.me/static/font/earthorbiterlaser-webfont.woff2') format('woff2'),
+         url('https://willhamshaw.me/static/font/earthorbiterlaser-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
